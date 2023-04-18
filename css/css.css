@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(to top,rgb(0 0 0 ),rgb(204, 225, 245),transparent);
+}
+.back{
+    background: linear-gradient(to bottom,rgba(226, 224, 224, 0.3),transparent,rgb(99, 95, 95)), url(/images/productybpyj/PHOTO-2022-05-18-14-57-14\ 2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.back{
+    top: 300px;
+}
+.header{
+    padding-top: 120px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin:0 20px 20px 20px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #fff;  
+}
+p{
+    color: #fff;
+}
+.contact{
+    display: block;
+    margin-left: 10px;
+}
+.contact-info{
+    padding: 20px 25%;
+    margin: 10px 5px;
+
+}
+.contact-info input,textarea{
+    width: 300px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    margin: 5px;
+}
+@media (max-width:800px) {
+    .back{
+        background:linear-gradient(to bottom,rgba(226, 224, 224, 0.3),transparent,rgb(99, 95, 95)), url(/images/productybpyj/PHOTO-2022-05-18-14-57-20.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+@media (min-width:1050px) {
+    .contact-info{
+        padding: 20px 40%;
+        margin: 10px 5px;
+
+    }
+}
+@media (max-width:700px) {
+    .contact-info{
+        padding: 20px 15%;
+        margin: 10px 5px;
+    
+    }
+}
+footer.section-padding{
+    background: url(/images/products/C7E6424D-E78E-41BE-A46D-550CB4C1462E.JPEG);
+    background-size: cover;
+    color: #fff;
+    /* font-weight: 700; */
+}
+.section-padding h6,h2{
+    background: #0e0d0d2d;
+}
