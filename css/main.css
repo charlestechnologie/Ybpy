@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 :root
 {
-    --main-color:#000;
+    --main-color:#ee44c9;
     --shadow-black-100:0 5px 15px rgba(0,0,0,0.1);
     --black-900:#01010f;
     --black-400:#555555;
@@ -29,7 +29,7 @@ body
     overflow-x: hidden;
     background-color: var(--white-100);
 }
-.acceuil{
+/* .acceuil{
     height: 100%;
     width: 100%;
     background: url(/Essaie.PNG);
@@ -39,7 +39,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 ::before,::after
 {
     box-sizing: border-box;
@@ -140,7 +140,7 @@ img
 }
 .btn-1:hover
 {
-    border: 1px solid var(--white-100);
+    border: 1px solid var(--main-color);
     background-color: transparent;
     color: var(--main-color);
 }
@@ -176,13 +176,13 @@ img
 {
     height: 3px;
     width: 3px;
-    background-color: var(--black-400);
+    background-color: var(--main-color);
     margin: 0 3px 8px;
 }
 .effect-3
 {
     border-top: 30px solid transparent;
-    border-left: 30px solid var(--white);
+    border-left: 30px solid var(--main-color);
     left: 30%;
     top: 20%;
     animation: spin 15s linear infinite;
@@ -191,7 +191,7 @@ img
 {
     content: '';
     border-top: 30px solid transparent;
-    border-left: 30px solid var(--white);
+    border-left: 30px solid var(--main-color);
     position: absolute;
     left: -35px;
     top: -25px;
@@ -212,7 +212,7 @@ img
 .effect-4 div
 {
     width: 1px;
-    background-color: var(--white-100);
+    background-color: var(--main-color);
 }
 @keyframes spin 
 {
@@ -520,7 +520,7 @@ img
     height: 400px;
     margin: 5px;
     position: relative;
-    background: url("/images/products/PHOTO-2022-05-18-14-57-06.JPG");
+    background: url("../images/products/PHOTO-2022-05-18-14-57-06.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 40%;   
@@ -559,7 +559,7 @@ img
 }
 .card-img
 {
-    width: 200px;
+
     padding-bottom: 20px;
     transition: all .5s ease-in;
 }
@@ -731,12 +731,20 @@ span.center{
     resize: none;
 }
 /*===== footer section ======*/
-footer
+ /* footer
 {
-    background: linear-gradient(to top, rgb(212, 206, 206), rgb(204, 195, 195),transparent),url(/images/products/PHOTO-2022-05-18-14-57-089.jpg);
+    background: linear-gradient(to top, rgb(212, 206, 206), rgb(204, 195, 195),transparent),url(images/products/PHOTO-2022-05-18-14-57-089.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--black-900);
+}  */
+.footer p
+{
+    color: var(--black-100);
+}
+footer .vib
+{
+    color: var(--main-color);
 }
 .right-col{
     display:none;
@@ -764,10 +772,10 @@ footer
 {
     color: var(--main-color);
 }
-.left-text
+/* .left-text
 {
     color: var(--white);
-}
+} */
 .right-col h1
 {
     font-size: 26px;
@@ -857,19 +865,19 @@ footer
     {
         padding: 0;
     }
-    .home-section{
-        background:url(/images/products/PHOTO-2022-05-18-14-57-06.JPG);
+     .home-section{
+        background:url(../images/IMG-20230529-WA0008.jpg);
         /* background: linear-gradient(to bottom, rgba(0 0 0), rgba(0 0 0),transparent); */
-        background-repeat: no-repeat;
+         background-repeat: no-repeat;
         background-size: cover;
         background-position: left bottom;
         border-radius: 0  0  0 30%;
 
-    }
+    } 
     .home-section .home-text h2
     {
-        font-size: 46px;
-        line-height: 48px;
+        font-size: 20px;
+        line-height: 28px;
     }
     .home-section .home-text p 
     {
@@ -981,15 +989,15 @@ footer
 }
 @media(max-width:415px)
 {
-.home-section{
-    background:url(/images/products/PHOTO-2022-05-18-14-57-06.JPG);
+ .home-section{
+    background:url(../images/IMG-20230529-WA0008.jpg); 
     /* background: linear-gradient(to bottom, rgba(0 0 0), rgba(0 0 0),transparent); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
     border-radius: 0  0  0 30%;
 
-}
+} 
 }
 nav,.btn-1:hover{
     animation: nav 20s;
@@ -1002,3 +1010,118 @@ nav,.btn-1:hover{
         z-index: 100;
     }
 }
+/* watch video */
+
+.watch-video .video-container{
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+ }
+ 
+ .watch-video .video-container .video{
+    position: relative;
+    margin-bottom: 1.5rem;
+ }
+ 
+ .watch-video .video-container .video video{
+    border-radius: .5rem;
+    width: 75%;
+    object-fit: contain;
+    background-color: #000;
+ }
+ 
+ .watch-video .video-container .title{
+    font-size: 2rem;
+    color: var(--black);
+ }
+ 
+ .watch-video .video-container .info{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--border);
+    padding-bottom: 1.5rem;
+    gap: 2.5rem;
+    align-items: center;
+ }
+ 
+ .watch-video .video-container .info p{
+    font-size: 1.6rem;
+ }
+ 
+ .watch-video .video-container .info p span{
+    color: var(--light-color);
+ }
+ 
+ .watch-video .video-container .info i{
+    margin-right: 1rem;
+    color: var(--main-color);
+ }
+ 
+ .watch-video .video-container .tutor{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+ }
+ 
+ .watch-video .video-container .tutor img{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+ }
+ 
+ .watch-video .video-container .tutor h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: .2rem;
+ }
+ 
+ .watch-video .video-container .tutor span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+ }
+ 
+ .watch-video .video-container .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+ }
+ 
+ .watch-video .video-container .flex button{
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: var(--light-bg);
+ }
+ 
+ .watch-video .video-container .flex button i{
+    margin-right: 1rem;
+    color: var(--black);
+ }
+ 
+ .watch-video .video-container .flex button span{
+    color: var(--light-color);
+ }
+ 
+ .watch-video .video-container .flex button:hover{
+    background-color: var(--black);
+ }
+ 
+ .watch-video .video-container .flex button:hover i{
+    color: var(--white);
+ }
+ 
+ .watch-video .video-container .flex button:hover span{
+    color: var(--white);
+ }
+ 
+ .watch-video .video-container .description{
+    line-height: 1.5;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-top: 2rem;
+ }
